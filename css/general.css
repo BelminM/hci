@@ -48,6 +48,9 @@ header {
 #menu-list li {
   margin: 0px 10px;
   padding-bottom: 10px;
+  border: white 1px solid;
+  border-radius: 25px;
+  padding: 6px;
 }
 li#current {
   border-bottom: 2px solid #fff;
@@ -95,7 +98,7 @@ ul.dropdown-list {
   width: 180px;
   top: 35px;
   left: -10px;
-  background-color: #2E2E2E;
+  background-color: #2e2e2e;
   color: #fff;
   z-index: 11;
 }
