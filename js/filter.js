@@ -68,12 +68,12 @@ function viewCarsByPrice() {
     carPrice = parseFloat(carPrice);
     // console.log("Car " + carPrice);
     // console.log(minPrice);
+    var carStates = document.getElementsByClassName("car-state-tag");
+    var cars = document.getElementsByClassName("car-list-item");
     if(!maxPrice && !minPrice) {
       cars[i].style.display = "block";
       break;
     }
-    var carStates = document.getElementsByClassName("car-state-tag");
-    var cars = document.getElementsByClassName("car-list-item");
     if(carPrice <= minPrice && minPrice)
       cars[i].style.display = "none";
 
@@ -83,5 +83,10 @@ function viewCarsByPrice() {
 }
 
 function viewCarsByManufacturer() {
-  
+  var carNames = document.getElementsByClassName("c-details-mv");
+  for (var i = 0; i < carNames.length; i++) {
+    var carName = carNames[i].innerHTML.toLowerCase();
+    if(carName.includes("ford")) {
+    }
+  }
 }
