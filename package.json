@@ -1,0 +1,19 @@
+{
+  "name": "kupiauto",
+  "version": "1.0.0",
+  "description": "project for hci",
+  "main": "index.html",
+  "scripts": {
+    "test": "index.hmtl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BelminM/hci.git"
+  },
+  "author": "belmin and nizam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BelminM/hci/issues"
+  },
+  "homepage": "https://github.com/BelminM/hci#readme"
+}
