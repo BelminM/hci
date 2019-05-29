@@ -35,9 +35,9 @@ h2 {
 	text-align: left;
 }
 .status {
-	position: absolute;
-	bottom: 15px;
-	right: 15px;
+	position: relative;
+	bottom: -25px;
+	right: 0px;
 	background-color: #FEBD2D;
 	padding: 5px 10px;
 }
@@ -63,7 +63,7 @@ h2 {
 		margin: 0;
 	}
 	.purchase-date {
-		border-right: none; 
+		border-right: none;
 		border-bottom: 2px solid #eee;
 	}
 	.user-actions {
@@ -71,7 +71,7 @@ h2 {
 		border-top: 2px solid #eee;
 	}
 	.history-list-item:hover .purchase-date {
-		border-right: none; 
+		border-right: none;
 		border-bottom: 2px solid #fff;
 	}
 	.history-list-item:hover .user-actions {
