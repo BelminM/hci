@@ -56,8 +56,10 @@ function viewCarsByPrice() {
   var carPrices = document.getElementsByClassName("car-price");
   minPrice = minPrice.replace("KM ", "");
   minPrice = minPrice.replace(",", "");
-  maxPrice = minPrice.replace("KM ", "");
-  minPrice = minPrice.replace(",", "");
+  maxPrice = maxPrice.replace("KM ", "");
+  maxPrice = maxPrice.replace(",", "");
+  console.log(maxPrice);
+  console.log(minPrice);
   for (var i = 0; i < carPrices.length; i++) {
     var carPrice = carPrices[i].innerHTML;
     carPrice = carPrice.replace("KM ", "");
@@ -65,18 +67,13 @@ function viewCarsByPrice() {
     carPrice = parseFloat(carPrice);
     // console.log("Car " + carPrice);
     // console.log(minPrice);
-    if(carPrice <= minPrice && minPrice != null) {
-      var carStates = document.getElementsByClassName("car-state-tag");
-      var cars = document.getElementsByClassName("car-list-item");
+    var carStates = document.getElementsByClassName("car-state-tag");
+    var cars = document.getElementsByClassName("car-list-item");
+    if(carPrice <= minPrice && minPrice != null)
       cars[i].style.display = "none";
-    }
-    else {
-      console.log("Nemoj");
-    }
-    if(carPrice <= maxPrice && maxPrice != null)
-      console.log("Prikazi");
-    else {
-      console.log("Nemoj");
-    }
+
+    if(carPrice >= maxPrice && maxPrice != null)
+      cars[i].style.display = "none";
+
   }
 }
