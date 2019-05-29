@@ -59,8 +59,6 @@ function viewCarsByPrice() {
   minPrice = minPrice.replace(",", "");
   maxPrice = maxPrice.replace("KM ", "");
   maxPrice = maxPrice.replace(",", "");
-  console.log(maxPrice);
-  console.log(minPrice);
   for (var i = 0; i < carPrices.length; i++) {
     var carPrice = carPrices[i].innerHTML;
     carPrice = carPrice.replace("KM ", "");
@@ -86,7 +84,12 @@ function viewCarsByManufacturer() {
   var carNames = document.getElementsByClassName("c-details-mv");
   for (var i = 0; i < carNames.length; i++) {
     var carName = carNames[i].innerHTML.toLowerCase();
-    if(carName.includes("ford")) {
+    for (var j = 0; j < 11; j++) {
+      var id = "manu"+(j+1);
+      var checked = document.getElementById(id).value;
+      checked = checked.toLowerCase();
+      if(id.checked == true)
+        console.log("opaa");
     }
   }
 }
