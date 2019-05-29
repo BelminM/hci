@@ -13,8 +13,9 @@ menuBtn.onclick = () => {
 };
 
 window.addEventListener("resize", () => {
-	window.innerWidth > 750 ?
-    (menuList.style.display = "flex") : (menuList.style.display = "none");
+  window.innerWidth > 750
+    ? (menuList.style.display = "flex")
+    : (menuList.style.display = "none");
 });
 
 // Format the values entered into a text input for either price or mileage
@@ -28,7 +29,6 @@ numberInputs.forEach(input => {
   };
 });
 
-
 // Helper functions
 const toggleScroll = () => {
   const overlays = document.querySelectorAll(".overlay");
@@ -41,14 +41,15 @@ const toggleScroll = () => {
 };
 
 const toggleClass = (node, classN) => {
-  node.classList.contains(classN) ?
-    node.classList.remove(classN) : node.classList.add(classN);
-}
+  node.classList.contains(classN)
+    ? node.classList.remove(classN)
+    : node.classList.add(classN);
+};
 
 const formatCurrency = val => {
   val = val.replace(/[\D\s\._\-]+/g, "");
   val = val ? parseInt(val, 10) : 0;
-  return val === 0 ? "" : `N ${val.toLocaleString("en-US")}`;
+  return val === 0 ? "" : `KM ${val.toLocaleString("en-US")}`;
 };
 
 const formatKilometer = val => {

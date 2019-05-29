@@ -146,7 +146,8 @@ footer {
 }
 .footer-right {
   display: flex;
-  width: 210px;
+  align-content: flex-end;
+  float: right;
 }
 .footer-right ul {
   list-style: none;
@@ -357,14 +358,14 @@ h3.c-details-list {
   width: 35px;
   height: 35px;
   background-color: #eee;
-  color: #D61313;
+  color: #d61313;
   font-size: 2rem;
   padding: 2.5px 6.5px;
   cursor: pointer;
 }
 .close-btn:hover {
   background-color: #ccc;
-  color: #B71513;
+  color: #b71513;
   transition: all 0.3s ease-out;
 }
 .modal-view {
