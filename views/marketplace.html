@@ -47,15 +47,15 @@
                         <h3>Car State</h3>
                         <div class="car-state-group">
                             <label>
-									<input type="radio" name="state" class="state" value="0" checked="">
+									<input id="state1" type="radio" name="state" class="state" value="0" checked="">
 									All
 								</label>
                             <label>
-									<input type="radio" name="state" class="state" value="0">
+									<input id="state2" type="radio" name="state" class="state" value="0">
 									New
 								</label>
                             <label>
-									<input type="radio" name="state" class="state" value="0">
+									<input id="state3" type="radio" name="state" class="state" value="0">
 									Used
 								</label>
                         </div>
@@ -172,6 +172,7 @@
 									Hatch
 								</label>
                         </div>
+												<button class="applyChanges" type="button" name="button" onClick="viewCarsByState()">Apply Changes</button>
                     </div>
                 </div>
             </div>
@@ -433,6 +434,7 @@
     <script src="../js/general.js"></script>
     <script src="../js/filter-response.js"></script>
     <script src="../js/marketplace.js"></script>
+		<script src="../js/filter.js"></script>
 </body>
 
 </html>

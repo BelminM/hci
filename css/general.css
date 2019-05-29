@@ -617,3 +617,9 @@ h3.c-details-mv {
         width: 49%;
     }
 }
+
+.applyChanges {
+  width: 120px;
+  height: 30px;
+  margin-left: 77px;
+}

@@ -1,6 +1,8 @@
 var carsState = document.getElementsByClassName("state");
 
+function viewCarsByState() {
   if(document.getElementById("state3").checked == true) {
+    console.log("suadji");
     hideNew();
     showUsed();
   } else if(document.getElementById("state2").checked == true) {
@@ -10,6 +12,7 @@ var carsState = document.getElementsByClassName("state");
     showNew();
     showUsed();
   }
+}
 function hideNew() {
   var carStates = document.getElementsByClassName("car-state-tag");
   var cars = document.getElementsByClassName("car-list-item");
