@@ -1,130 +1,142 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width initial-scale=1.0">
-		<meta name="description" content="Auto Mart is an online marketplace for automobiles of diverse makes, model or body type. With Auto Mart, users can sell their cars or buy from trusted dealerships or private sellers.">
-		<title>Sales History - Auto Mart</title>
 
-		<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta name="description" content="Auto Mart is an online marketplace for automobiles of diverse makes, model or body type. With Auto Mart, users can sell their cars or buy from trusted dealerships or private sellers.">
+    <title>Sales History - Auto Mart</title>
 
-		<link href="../css/general.css" rel="stylesheet">
-		<link href="../css/history.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
 
-		<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
-	</head>
-	<body>
-		<div class="container">
-			<header>
-				<nav>
-					<a href="../index.html"><img src="../images/automart-full-logo-250px.png" width="150"></a>
-					<div id="menu-bar">
-						<span id="menu-btn"><i class="fa fa-bars"></i><i class="fa fa-times hide"></i></span>
-						<ul id="menu-list">
-							<li><a href="./post-new-ad.html">Post New AD</a></li>
-							<li><a href="./marketplace.html">Marketplace</a></li>
-							<li><a href="./my-posted-ads.html">My ADs</a></li>
-							<li id="current" class="dropdown"><a href="javascript:void(0)">History <i class="fa fa-caret-down"></i></a>
-								<ul class="dropdown-list"></a>
-									<li id="here"><a href="./sales-history.html">Sales History</a></li>
-									<li><a href="./purchase-history.html">Purchase History</a></li>
-								</ul>
-							</li>
-							<li><a href="../index.html">Logout</a></li>
-						</ul>
-					</div>
-				</nav>
-			</header>
+    <link href="../css/general.css" rel="stylesheet">
+    <link href="../css/history.css" rel="stylesheet">
 
-			<div class="content">
-				<main class="main-100">
-					<h2>My Sales Order History</h2>
-					<ul class="history-list">
-						<li class="history-list-item flex-container">
-							<div class="purchase-date p-15">
-								<label class="status">Pending</label>
-								<img src="../images/car-samples/car-sample-9.jpg" width="160px" title="Preview AD">
-								<p>24 Jan 2019 <br> 3:23pm</p> <br>
-							</div>
-							<div class="purchase-details p-15">
-								<h3 class="c-details-list">Purchase Order from John Ebuka</h3>
-								<p class="purchase-info">For Volvo Highlander Dx @ KM 5,200</p>
-								<p class="purchase-info">Price Offered: KM 3,500</p>
-							</div>
-							<div class="user-actions p-15">
-								<button class="order full-btn btn">Accept Offer</button>
-								<button class="delete full-btn btn">Decline Offer</button>
-							</div>
-						</li>
-						<li class="history-list-item flex-container">
-							<div class="purchase-date p-15">
-								<label class="status">Accepted</label>
-								<img src="../images/car-samples/car-sample-10.jpg" width="160px" title="Preview AD">
-								<p>24 Jan 2019<br>3:23pm</p>
-							</div>
-							<div class="purchase-details p-15">
-								<h3 class="c-details-list">Purchase Order from John Ebuka</h3>
-								<p class="purchase-info">For Volvo Highlander Dx @ KM 5,200</p>
-								<p class="purchase-info">Price Offered: KM 3,500</p>
-							</div>
-							<div class="user-actions p-15">
-								<button class="order full-btn btn" disabled>Accept Offer</button>
-								<button class="delete full-btn btn" disabled>Decline Offer</button>
-							</div>
-						</li>
-						<li class="history-list-item flex-container">
-							<div class="purchase-date p-15">
-								<label class="status">Pending</label>
-								<img src="../images/car-samples/car-sample-9.jpg" width="160px" title="Preview AD">
-								<p>24 Jan 2019<br>3:23pm</p>
-							</div>
-							<div class="purchase-details p-15">
-								<h3 class="c-details-list">Purchase Order from John Ebuka</h3>
-								<p class="purchase-info">For Volvo Highlander Dx @ KM 5,200</p>
-								<p class="purchase-info">Price Offered: KM 3,500</p>
-							</div>
-							<div class="user-actions p-15">
-								<button class="order full-btn btn">Accept Offer</button>
-								<button class="delete full-btn btn">Decline Offer</button>
-							</div>
-						</li>
-						<li class="history-list-item flex-container">
-							<div class="purchase-date p-15">
-								<label class="status">Rejected</label>
-								<img src="../images/car-samples/car-sample-10.jpg" width="160px" title="Preview AD">
-								<p>24 Jan 2019<br>3:23pm</p>
-							</div>
-							<div class="purchase-details p-15">
-								<h3 class="c-details-list">Purchase Order from John Ebuka</h3>
-								<p class="purchase-info">For Volvo Highlander Dx @ KM 5,200</p>
-								<p class="purchase-info">Price Offered: KM 3,500</p>
-							</div>
-							<div class="user-actions p-15">
-								<button class="order full-btn btn" disabled>Accept Offer</button>
-								<button class="delete full-btn btn" disabled>Decline Offer</button>
-							</div>
-						</li>
-					</ul>
-				</main>
-			</div>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
 
-			<footer>
-				<div class="inner-div" style="align-content: center">
-					<p>KupiAuto 2019 &#169</p>
-					<div class="footer-right">
-						<ul>
-							<a href="https://twitter.com/" target="_blank"><li><i class="fab fa-twitter" aria-hidden="true"></i></li></a>
-							<a href="https://www.linkedin.com/" target="_blank"><li><i class="fab fa-linkedin-in" aria-hidden="true"></i></li></a>
-							<a href="https://github.com" target="_blank"><li><i class="fab fa-github"></i></li></a>
-							<a href="https://codepen.io" target="_blank"><li><i class="fab fa-codepen" ></i></li></a>
-						</ul>
-					</div>
-				</div>
-			</footer>
-		</div>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="../index.html"><img src="../images/logo3.png" width="150"></a>
+                <div id="menu-bar">
+                    <span id="menu-btn"><i class="fa fa-bars"></i><i class="fa fa-times hide"></i></span>
+                    <ul id="menu-list">
+                        <li><a href="./post-new-ad.html">Post New AD</a></li>
+                        <li><a href="./marketplace.html">Marketplace</a></li>
+                        <li><a href="./my-posted-ads.html">My ADs</a></li>
+                        <li id="current" class="dropdown"><a href="javascript:void(0)">History <i class="fa fa-caret-down"></i></a>
+                            <ul class="dropdown-list">
+                                </a>
+                                <li id="here"><a href="./sales-history.html">Sales History</a></li>
+                                <li><a href="./purchase-history.html">Purchase History</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../index.html">Logout</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
-		<!-- scripts -->
-		<script src="../js/general.js"></script>
-	</body>
+        <div class="content">
+            <main class="main-100">
+                <h2>My Sales Order History</h2>
+                <ul class="history-list">
+                    <li class="history-list-item flex-container">
+                        <div class="purchase-date p-15">
+                            <label class="status">Pending</label>
+                            <img src="../images/car-samples/car-sample-9.jpg" width="160px" title="Preview AD">
+                            <p>24 Jan 2019 <br> 3:23pm</p> <br>
+                        </div>
+                        <div class="purchase-details p-15">
+                            <h3 class="c-details-list">Purchase Order from John Ebuka</h3>
+                            <p class="purchase-info">For Volvo Highlander Dx @ KM 5,200</p>
+                            <p class="purchase-info">Price Offered: KM 3,500</p>
+                        </div>
+                        <div class="user-actions p-15">
+                            <button class="order full-btn btn">Accept Offer</button>
+                            <button class="delete full-btn btn">Decline Offer</button>
+                        </div>
+                    </li>
+                    <li class="history-list-item flex-container">
+                        <div class="purchase-date p-15">
+                            <label class="status">Accepted</label>
+                            <img src="../images/car-samples/car-sample-10.jpg" width="160px" title="Preview AD">
+                            <p>24 Jan 2019<br>3:23pm</p>
+                        </div>
+                        <div class="purchase-details p-15">
+                            <h3 class="c-details-list">Purchase Order from John Ebuka</h3>
+                            <p class="purchase-info">For Volvo Highlander Dx @ KM 5,200</p>
+                            <p class="purchase-info">Price Offered: KM 3,500</p>
+                        </div>
+                        <div class="user-actions p-15">
+                            <button class="order full-btn btn" disabled>Accept Offer</button>
+                            <button class="delete full-btn btn" disabled>Decline Offer</button>
+                        </div>
+                    </li>
+                    <li class="history-list-item flex-container">
+                        <div class="purchase-date p-15">
+                            <label class="status">Pending</label>
+                            <img src="../images/car-samples/car-sample-9.jpg" width="160px" title="Preview AD">
+                            <p>24 Jan 2019<br>3:23pm</p>
+                        </div>
+                        <div class="purchase-details p-15">
+                            <h3 class="c-details-list">Purchase Order from John Ebuka</h3>
+                            <p class="purchase-info">For Volvo Highlander Dx @ KM 5,200</p>
+                            <p class="purchase-info">Price Offered: KM 3,500</p>
+                        </div>
+                        <div class="user-actions p-15">
+                            <button class="order full-btn btn">Accept Offer</button>
+                            <button class="delete full-btn btn">Decline Offer</button>
+                        </div>
+                    </li>
+                    <li class="history-list-item flex-container">
+                        <div class="purchase-date p-15">
+                            <label class="status">Rejected</label>
+                            <img src="../images/car-samples/car-sample-10.jpg" width="160px" title="Preview AD">
+                            <p>24 Jan 2019<br>3:23pm</p>
+                        </div>
+                        <div class="purchase-details p-15">
+                            <h3 class="c-details-list">Purchase Order from John Ebuka</h3>
+                            <p class="purchase-info">For Volvo Highlander Dx @ KM 5,200</p>
+                            <p class="purchase-info">Price Offered: KM 3,500</p>
+                        </div>
+                        <div class="user-actions p-15">
+                            <button class="order full-btn btn" disabled>Accept Offer</button>
+                            <button class="delete full-btn btn" disabled>Decline Offer</button>
+                        </div>
+                    </li>
+                </ul>
+            </main>
+        </div>
+
+        <footer>
+            <div class="inner-div" style="align-content: center">
+                <p>KupiAuto 2019 &#169</p>
+                <div class="footer-right">
+                    <ul>
+                        <a href="https://twitter.com/" target="_blank">
+                            <li><i class="fab fa-twitter" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <li><i class="fab fa-linkedin-in" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="https://github.com" target="_blank">
+                            <li><i class="fab fa-github"></i></li>
+                        </a>
+                        <a href="https://codepen.io" target="_blank">
+                            <li><i class="fab fa-codepen"></i></li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- scripts -->
+    <script src="../js/general.js"></script>
+</body>
+
 </html>
