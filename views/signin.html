@@ -34,7 +34,7 @@
         <main class="main-100">
             <div class="signin-form-container">
                 <h1>Sign In</h1>
-                <form>
+                <form action="./marketplace.html" method="POST">
                     <div>
                         <div id="error-div"></div>
                         <div class="input-field single">
@@ -45,7 +45,7 @@
                             <label for="password">Password:</label>
                             <input type="password" id="password" name="password" required/>
                         </div>
-                        <input type="submit" id="submit" onclick="redirect()" class="full-btn btn" name="submit" value="Sign In" />
+                        <input type="submit" id="submit" class="full-btn btn" name="submit" value="Sign In" />
                         <p class="end-note">New to Auto Mart, <a href="./signup.html">Create New Account</a></p>
                     </div>
                 </form>
@@ -73,12 +73,7 @@
             </div>
         </footer>
     </div>
-    <script>
-        function redirect() {
-            window.location.href = "./marketplace.html";
 
-        }
-    </script>
     <!-- scripts -->
     <script src="../js/general.js"></script>
 </body>
