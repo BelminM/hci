@@ -95,7 +95,7 @@ ul.dropdown-list {
   width: 180px;
   top: 35px;
   left: -10px;
-  background-color: rgba(41, 147, 226, 0.8);
+  background-color: #2E2E2E;
   color: #fff;
   z-index: 11;
 }
