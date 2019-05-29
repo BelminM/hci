@@ -12,6 +12,7 @@ function viewCarsByState() {
     showUsed();
   }
   viewCarsByPrice();
+  viewCarsByManufacturer();
 }
 function hideNew() {
   var carStates = document.getElementsByClassName("car-state-tag");
@@ -67,13 +68,20 @@ function viewCarsByPrice() {
     carPrice = parseFloat(carPrice);
     // console.log("Car " + carPrice);
     // console.log(minPrice);
+    if(!maxPrice && !minPrice) {
+      cars[i].style.display = "block";
+      break;
+    }
     var carStates = document.getElementsByClassName("car-state-tag");
     var cars = document.getElementsByClassName("car-list-item");
-    if(carPrice <= minPrice && minPrice != null)
+    if(carPrice <= minPrice && minPrice)
       cars[i].style.display = "none";
 
-    if(carPrice >= maxPrice && maxPrice != null)
+    if(carPrice >= maxPrice && maxPrice)
       cars[i].style.display = "none";
-
   }
+}
+
+function viewCarsByManufacturer() {
+  
 }
