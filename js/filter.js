@@ -82,14 +82,22 @@ function viewCarsByPrice() {
 
 function viewCarsByManufacturer() {
   var carNames = document.getElementsByClassName("c-details-mv");
-  for (var i = 0; i < carNames.length; i++) {
-    var carName = carNames[i].innerHTML.toLowerCase();
-    for (var j = 0; j < 11; j++) {
-      var id = "manu"+(j+1);
-      var checked = document.getElementById(id).value;
-      checked = checked.toLowerCase();
-      if(id.checked == true)
-        console.log("opaa");
+  var cars = document.getElementsByClassName("car-list-item");
+  for (var j = 0; j < 11; j++) {
+    var id = "manu"+(j+1);
+    if(document.getElementById(id).checked) {
+      hideNew();
+      hideUsed();
+      for (var i = 0; i < carNames.length; i++) {
+        var carName = carNames[i].innerHTML.toLowerCase();
+        var carChecked = document.getElementById(id).value;
+        carChecked = carChecked.toLowerCase();
+        // console.log(carName);
+        // console.log(carChecked);
+        if(carName.includes(carChecked)) {
+          cars[i].style.display = "block";
+        }
+      }
     }
   }
 }
